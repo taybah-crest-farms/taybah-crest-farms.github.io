@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#062b1c">
+<title>TAYBAH CREST FARMS | Since 2026</title>
+<meta name="description" content="TAYBAH CREST FARMS - Premium poultry, Brahma chickens, quail chicks and hatching eggs in Barishal, Bangladesh.">
+
+<style>
+:root {
+  --green: #062b1c;
+  --green2: #0c4930;
+  --gold: #d9b45b;
+  --cream: #f7f4e9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: #183426;
+  line-height: 1.7;
+}
+header {
+  background: var(--green);
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid var(--gold);
+}
+.logo {
+  color: var(--gold);
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 17px;
+  font-size: 13px;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 570px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 80% 40%, #287348 0%, transparent 48%),
+    linear-gradient(120deg, #031b12, #0b442b);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "🐓";
+  position: absolute;
+  right: 8%;
+  bottom: 20px;
+  font-size: clamp(130px, 25vw, 290px);
+  opacity: .85;
+  filter: drop-shadow(0 20px 25px #0008);
+}
+.hero-content {
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+.tag {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  line-height: 1.12;
+  margin: 22px 0;
+}
+h1 span { color: var(--gold); }
+.hero p { max-width: 520px; color: #e1e9e2; }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: var(--gold);
+  color: #172719;
+  padding: 13px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section { padding: 75px 7%; }
+.section-title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+.section-title h2 {
+  color: var(--green);
+  font-size: 34px;
+}
+.section-title p { color: #657468; }
+.about {
+  background: white;
+  text-align: center;
+}
+.about p {
+  max-width: 750px;
+  margin: auto;
+}
+.products {
+  background: var(--cream);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.product {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #173c2010;
+  transition: .3s;
+}
+.product:hover { transform: translateY(-7px); }
+.product-art {
+  min-height: 155px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #0a3926, #39734c);
+  font-size: 76px;
+}
+.product-info { padding: 20px; }
+.product h3 { color: var(--green); margin-bottom: 8px; }
+.product p { color: #657468; font-size: 14px; }
+.product a {
+  color: #8b6a22;
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.highlight {
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+.highlight h2 { color: var(--gold); font-size: 32px; }
+.highlight p { max-width: 650px; margin: 15px auto; }
+.contact {
+  background: white;
+  text-align: center;
+}
+.contact h2 { color: var(--green); }
+.contact p { margin: 10px; }
+.contact a { margin: 10px; }
+footer {
+  background: #031a11;
+  color: #d5dfd7;
+  padding: 30px 7%;
+  text-align: center;
+  border-top: 2px solid var(--gold);
+}
+footer strong { color: var(--gold); }
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 18px;
+  background: #168b4b;
+  color: white;
+  padding: 13px 19px;
+  border-radius: 30px;
+  text-decoration: none;
+  z-index: 20;
+  box-shadow: 0 5px 18px #0004;
+}
+@media(max-width:700px) {
+  header { flex-direction: column; gap: 12px; }
+  nav { display: flex; flex-wrap: wrap; justify-content: center; }
+  nav a { margin: 4px 9px; }
+  .hero { min-height: 510px; padding: 65px 7%; }
+  .hero::after { right: 2%; bottom: 0; opacity: .32; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .product-art { min-height: 115px; font-size: 55px; }
+  .product-info { padding: 13px; }
+  .product h3 { font-size: 15px; }
+  section { padding: 55px 5%; }
+}
+@media(max-width:390px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">♛ TAYBAH CREST FARMS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">PREMIUM POULTRY & LIVESTOCK FARM</div>
+    <h1>Welcome to<br><span>TAYBAH CREST</span><br>FARMS</h1>
+    <p>Discover beautiful poultry breeds, quality chicks and hatching eggs. Bringing quality farming closer to you.</p>
+    <p>হালাল রিজিক অল্প হলেও তাতে শান্তি আছে।</p>
+    <a href="#products" class="btn">Explore Our Farm →</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <div class="tag">OUR STORY</div>
+    <h2>About Our Farm</h2>
+    <p>Welcome to TAYBAH CREST FARMS</p>
+  </div>
+  <p>
+    TAYBAH CREST FARMS is a poultry and livestock farm based in Barishal, Bangladesh.
+    We are passionate about raising beautiful poultry breeds and providing quality chicks
+    and hatching eggs. Our journey began in 2026 with dedication, care and honesty.
+  </p>
+</section>
+
+<section class="products" id="products">
+  <div class="section-title">
+    <div class="tag">OUR COLLECTION</div>
+    <h2>Our Products</h2>
+    <p>Explore our poultry and livestock collection</p>
+  </div>
+
+  <div class="grid">
+
+    <article class="product">
+      <div class="product-art">🐓</div>
+      <div class="product-info">
+        <h3>Brahma Chicken</h3>
+        <p>Beautiful and impressive large poultry breed.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐔</div>
+      <div class="product-info">
+        <h3>Polish Cap</h3>
+        <p>Distinctive crested ornamental poultry.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐤</div>
+      <div class="product-info">
+        <h3>Golden Sebright</h3>
+        <p>Beautiful small ornamental chicken breed.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐓</div>
+      <div class="product-info">
+        <h3>Kadaknath</h3>
+        <p>Distinctive Indian poultry breed.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐔</div>
+      <div class="product-info">
+        <h3>Red Necked</h3>
+        <p>Explore our selected poultry collection.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐦</div>
+      <div class="product-info">
+        <h3>European Coturnix</h3>
+        <p>Quail chicks and hatching eggs.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🥚</div>
+      <div class="product-info">
+        <h3>Hatching Eggs</h3>
+        <p>Contact us for hatching egg availability.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art">🐇</div>
+      <div class="product-info">
+        <h3>Rabbits</h3>
+        <p>Discover our small livestock collection.</p>
+        <a href="#contact">Inquire Now →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="tag">SINCE 2026</div>
+  <h2>Quality With Care</h2>
+  <p>Our goal is to build trust through responsible farming, quality poultry and honest service.</p>
+  <a href="#contact" class="btn">Contact Our Farm</a>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <div class="tag">GET IN TOUCH</div>
+    <h2>Contact Our Farm</h2>
+  </div>
+  <p><strong>TAYBAH CREST FARMS</strong></p>
+  <p>📍 Barishal, Bangladesh</p>
+  <p>🐓 Poultry | 🐦 Quail | 🥚 Hatching Eggs | 🐇 Rabbits</p>
+  <p>For product availability and orders, contact our farm.</p>
+  <a class="btn" href="https://www.facebook.com/" target="_blank">Facebook Page</a>
+</section>
+</main>
+
+<footer>
+  <strong>TAYBAH CREST FARMS</strong>
+  <p>হালাল রিজিক অল্প হলেও তাতে শান্তি আছে</p>
+  <p>© 2026 TAYBAH CREST FARMS. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="#contact">Contact Us</a>
+
+</body>
+</html>
