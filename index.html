@@ -1,648 +1,94 @@
 
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#082b1d">
-<meta name="description" content="TAYBAH CREST FARMS - Premium poultry, quail, livestock and hatching eggs in Barishal, Bangladesh.">
-<title>TAYBAH CREST FARMS | Since 2026</title>
+TAYBAH CREST FARMSSINCE 2026হোমআমাদের সম্পর্কেপণ্যসমূহগ্যালারিযোগাযোগ
+English☰
 
-<style>
-:root {
-  --green:#082b1d;
-  --green2:#145638;
-  --gold:#d7b45a;
-  --cream:#f7f5ed;
-  --ink:#193629;
-  --muted:#65766b;
-}
-* {box-sizing:border-box;margin:0;padding:0}
-html {scroll-behavior:smooth;scroll-padding-top:90px}
-body {
-  font-family:Arial,"Noto Sans Bengali",sans-serif;
-  background:var(--cream);
-  color:var(--ink);
-  line-height:1.7;
-}
-a {color:inherit}
-.wrap {width:min(1160px,92%);margin:auto}
-
-/* HEADER */
-.header {
-  position:sticky;top:0;z-index:20;
-  background:#082b1df7;color:white;
-  border-bottom:2px solid var(--gold);
-}
-.nav {
-  min-height:74px;display:flex;
-  align-items:center;justify-content:space-between;
-  gap:14px;
-}
-.brand {
-  display:flex;align-items:center;gap:10px;
-  text-decoration:none;
-}
-.brand img {
-  width:52px;height:52px;object-fit:contain;
-  background:white;border-radius:50%;padding:3px;
-}
-.brand b {
-  font:bold 19px Georgia,serif;
-  color:var(--gold);letter-spacing:1px;
-}
-.brand small {
-  display:block;color:white;font:10px Arial;
-  letter-spacing:2px;
-}
-nav {display:flex;gap:17px;align-items:center}
-nav a {color:white;text-decoration:none;font-size:14px}
-nav a:hover {color:var(--gold)}
-button {cursor:pointer}
-.lang,.menu {
-  border:1px solid var(--gold);
-  background:transparent;color:var(--gold);
-  border-radius:24px;padding:9px 13px;font-weight:bold;
-}
-.menu {display:none}
-
-/* HERO */
-.hero {
-  background:
-    linear-gradient(110deg,#031a11f5,#0b442be8),
-    url("images/hero-farm.jpg") center/cover;
-  color:white;min-height:560px;
-  display:flex;align-items:center;
-}
-.hero-inner {padding:85px 0;max-width:720px}
-.eyebrow {
-  color:var(--gold);font-size:12px;
-  font-weight:bold;letter-spacing:3px;
-}
-.hero h1 {
-  font:bold clamp(40px,7vw,76px)/1.08 Georgia,serif;
-  margin:18px 0;
-}
-.hero h1 span {color:var(--gold)}
-.hero p {color:#e3eae4;font-size:17px;max-width:620px}
-.actions {display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn {
-  display:inline-block;padding:12px 21px;
-  border:1px solid var(--gold);border-radius:28px;
-  text-decoration:none;font-weight:bold;
-}
-.gold {background:var(--gold);color:#14271b}
-.outline {color:white}
-.since {
-  display:block;margin-top:26px;
-  color:#e8dfc2;letter-spacing:2px;font-size:13px;
-}
-
-/* GENERAL SECTIONS */
-section {padding:72px 0}
-.heading {
-  text-align:center;max-width:700px;
-  margin:0 auto 35px;
-}
-.heading .eyebrow {color:#96772e}
-.heading h2,.about h2 {
-  font:bold clamp(30px,4vw,43px) Georgia,serif;
-  color:var(--green);margin:8px 0;
-}
-.heading p,.muted {color:var(--muted)}
-
-/* ABOUT */
-.about {background:white}
-.about-grid {
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:38px;align-items:center;
-}
-.about p {color:#53675b;margin:12px 0}
-.logo-panel {
-  background:linear-gradient(145deg,var(--green),var(--green2));
-  border-radius:20px;padding:25px;
-  display:grid;place-items:center;min-height:280px;
-}
-.logo-panel img {
-  width:min(260px,80%);max-height:260px;
-  object-fit:contain;background:white;
-  border-radius:16px;padding:8px;
-}
-
-/* PRODUCTS */
-.products {background:var(--cream)}
-.cards {
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.card {
-  background:white;border:1px solid #e7e4d9;
-  border-radius:16px;overflow:hidden;
-  box-shadow:0 8px 24px #0423160d;
-  transition:.3s;
-}
-.card:hover {transform:translateY(-5px)}
-.photo {
-  height:190px;position:relative;
-  display:grid;place-items:center;overflow:hidden;
-  background:linear-gradient(135deg,#0b3b28,#397653);
-}
-.photo img {width:100%;height:100%;object-fit:cover}
-.placeholder {
-  position:absolute;inset:0;
-  display:grid;place-items:center;
-  padding:12px;text-align:center;
-  color:#f2dfaa;font:bold 16px Georgia,serif;
-  letter-spacing:1px;pointer-events:none;
-}
-.info {padding:18px}
-.info h3 {
-  font:bold 21px Georgia,serif;
-  color:var(--green);margin-bottom:6px;
-}
-.info p {font-size:14px;color:var(--muted);margin-bottom:12px}
-.info a {color:#8a6b24;font-weight:bold;text-decoration:none}
-
-/* GALLERY */
-.gallery {background:white}
-.gallery-grid {
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}
-.tile {
-  height:185px;border-radius:13px;
-  overflow:hidden;position:relative;
-  background:linear-gradient(135deg,#0b3b28,#397653);
-}
-.tile img {width:100%;height:100%;object-fit:cover}
-.tile span {
-  position:absolute;bottom:0;left:0;right:0;
-  padding:25px 10px 9px;color:white;
-  font-weight:bold;
-  background:linear-gradient(transparent,#000b);
-}
-.note {
-  text-align:center;color:var(--muted);
-  font-size:13px;margin-top:16px;
-}
-
-/* PROMISE */
-.promise {
-  background:var(--green);color:white;text-align:center;
-}
-.promise h2 {
-  font:bold clamp(29px,4vw,42px) Georgia,serif;
-  color:var(--gold);margin:8px;
-}
-.promise p {max-width:720px;margin:auto;color:#e2e9e3}
-
-/* CONTACT */
-.contact {background:var(--cream)}
-.contact-grid {
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:15px;max-width:900px;margin:auto;
-}
-.contact-card {
-  display:flex;gap:13px;background:white;
-  border:1px solid #e7e4d9;border-radius:15px;
-  padding:20px;
-}
-.ico {
-  width:40px;height:40px;border-radius:50%;
-  background:#edf3ed;display:grid;place-items:center;
-  color:var(--green);font-size:20px;flex:none;
-}
-.contact-card h3 {margin:0 0 5px;color:var(--green);font-size:16px}
-.contact-card p {margin:0;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
-.contact-card a {color:#84651e;font-weight:bold;text-decoration:none}
-.contact-actions {
-  display:flex;justify-content:center;
-  gap:12px;flex-wrap:wrap;margin-top:25px;
-}
-
-/* FOOTER */
-.footer {
-  background:#031a11;color:#dbe4dc;
-  text-align:center;padding:30px 0;
-  border-top:2px solid var(--gold);
-}
-.footer b {font:bold 22px Georgia,serif;color:var(--gold)}
-.footer p {font-size:13px;color:#c2d0c5;margin:7px}
-.wa-float {
-  position:fixed;right:16px;bottom:16px;z-index:10;
-  background:#168b4b;color:white;text-decoration:none;
-  border-radius:25px;padding:12px 17px;
-  font-weight:bold;box-shadow:0 6px 20px #0003;
-}
-
-/* MOBILE */
-@media(max-width:850px) {
-  .menu {display:block}
-  nav {
-    display:none;position:absolute;top:74px;
-    left:0;right:0;background:var(--green);
-    padding:18px 5%;flex-direction:column;
-    align-items:flex-start;
-  }
-  nav.open {display:flex}
-  .about-grid {grid-template-columns:1fr}
-  .cards {grid-template-columns:repeat(2,1fr)}
-  .gallery-grid {grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:520px) {
-  section {padding:55px 0}
-  .brand img {width:44px;height:44px}
-  .brand b {font-size:14px}
-  .hero {min-height:510px}
-  .hero-inner {padding:65px 0}
-  .hero p {font-size:15px}
-  .cards {gap:11px}
-  .photo {height:140px}
-  .info {padding:13px}
-  .info h3 {font-size:17px}
-  .gallery-grid {gap:10px}
-  .tile {height:140px}
-  .contact-grid {grid-template-columns:1fr}
-  .wa-float {font-size:13px;padding:10px 14px}
-}
-</style>
-</head>
-
-<body>
-
-<!-- HEADER -->
-<header class="header">
-<div class="wrap nav">
-
-<a class="brand" href="#home">
-<img src="taybah_crest_farms_logo.png" alt="TAYBAH CREST FARMS Logo">
-<b>TAYBAH CREST FARMS<small>SINCE 2026</small></b>
-</a>
-
-<nav id="nav">
-<a href="#home" data-bn="হোম" data-en="Home">হোম</a>
-<a href="#about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a>
-<a href="#products" data-bn="পণ্যসমূহ" data-en="Products">পণ্যসমূহ</a>
-<a href="#gallery" data-bn="গ্যালারি" data-en="Gallery">গ্যালারি</a>
-<a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
-</nav>
-
-<div>
-<button class="lang" id="lang">English</button>
-<button class="menu" id="menu">☰</button>
-</div>
-
-</div>
-</header>
-
-<main>
-
-<!-- HERO -->
-<section class="hero" id="home">
-<div class="wrap hero-inner">
-
-<div class="eyebrow"
-data-bn="প্রিমিয়াম পোল্ট্রি ও লাইভস্টক ফার্ম"
-data-en="PREMIUM POULTRY & LIVESTOCK FARM">
 প্রিমিয়াম পোল্ট্রি ও লাইভস্টক ফার্ম
-</div>
-
-<h1
-data-bn="স্বাগতম<br><span>TAYBAH CREST</span><br>FARMS-এ"
-data-en="Welcome to<br><span>TAYBAH CREST</span><br>FARMS">
-স্বাগতম<br><span>TAYBAH CREST</span><br>FARMS-এ
-</h1>
-
-<p
-data-bn="সুন্দর পোল্ট্রি জাত, কোয়েল, ছোট প্রাণী এবং হ্যাচিং ডিম সম্পর্কে জানতে আমাদের খামার ঘুরে দেখুন। সততা, যত্ন ও দায়িত্বশীল খামার পরিচালনাই আমাদের অঙ্গীকার।"
-data-en="Explore our poultry breeds, quail, small livestock and hatching eggs. We value honesty, care and responsible farm practices.">
+স্বাগতম
+TAYBAH CREST
+FARMS-এ
 সুন্দর পোল্ট্রি জাত, কোয়েল, ছোট প্রাণী এবং হ্যাচিং ডিম সম্পর্কে জানতে আমাদের খামার ঘুরে দেখুন। সততা, যত্ন ও দায়িত্বশীল খামার পরিচালনাই আমাদের অঙ্গীকার।
-</p>
+আমাদের পণ্য দেখুন →WhatsApp-এ যোগাযোগ
 
-<div class="actions">
-<a class="btn gold" href="#products"
-data-bn="আমাদের পণ্য দেখুন →"
-data-en="Explore Products →">আমাদের পণ্য দেখুন →</a>
-
-<a class="btn outline" href="https://wa.me/8801338563545"
-target="_blank" rel="noopener"
-data-bn="WhatsApp-এ যোগাযোগ"
-data-en="Contact on WhatsApp">WhatsApp-এ যোগাযোগ</a>
-</div>
-
-<span class="since"
-data-bn="বিশ্বাস • যত্ন • সততা"
-data-en="TRUST • CARE • HONESTY">বিশ্বাস • যত্ন • সততা</span>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-<div class="wrap about-grid">
-
-<div>
-<div class="eyebrow" data-bn="আমাদের গল্প" data-en="OUR STORY">আমাদের গল্প</div>
-
-<h2
-data-bn="TAYBAH CREST FARMS সম্পর্কে"
-data-en="About TAYBAH CREST FARMS">
+আমাদের গল্প
 TAYBAH CREST FARMS সম্পর্কে
-</h2>
-
-<p
-data-bn="TAYBAH CREST FARMS বাংলাদেশের বরিশালভিত্তিক একটি পোল্ট্রি ও লাইভস্টক ফার্ম। আমরা বিভিন্ন পোল্ট্রি জাত, কোয়েল, ছোট প্রাণী এবং হ্যাচিং ডিম নিয়ে কাজ করি। ২০২৬ সালে সততা, যত্ন ও নিষ্ঠার সঙ্গে আমাদের যাত্রা শুরু।"
-data-en="TAYBAH CREST FARMS is a poultry and livestock farm based in Barishal, Bangladesh. We work with selected poultry breeds, quail, small livestock and hatching eggs. Our journey began in 2026 with care, honesty and dedication.">
 TAYBAH CREST FARMS বাংলাদেশের বরিশালভিত্তিক একটি পোল্ট্রি ও লাইভস্টক ফার্ম। আমরা বিভিন্ন পোল্ট্রি জাত, কোয়েল, ছোট প্রাণী এবং হ্যাচিং ডিম নিয়ে কাজ করি। ২০২৬ সালে সততা, যত্ন ও নিষ্ঠার সঙ্গে আমাদের যাত্রা শুরু।
-</p>
-
-<p
-data-bn="হালাল রিজিক অল্প হলেও তাতে শান্তি আছে।"
-data-en="Even a little halal provision brings peace.">
 হালাল রিজিক অল্প হলেও তাতে শান্তি আছে।
-</p>
-</div>
 
-<div class="logo-panel">
-<img src="taybah_crest_farms_logo.png" alt="TAYBAH CREST FARMS Emblem">
-</div>
 
-</div>
-</section>
+TAYBAH CREST FARMS · PREMIUM FARM
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
-<div class="wrap">
 
-<div class="heading">
-<div class="eyebrow" data-bn="আমাদের সংগ্রহ" data-en="OUR COLLECTION">আমাদের সংগ্রহ</div>
-<h2 data-bn="আমাদের পণ্যসমূহ" data-en="Our Products">আমাদের পণ্যসমূহ</h2>
-<p data-bn="প্রতিটি পণ্যের বর্তমান প্রাপ্যতা জানতে সরাসরি যোগাযোগ করুন।"
-data-en="Please contact us to confirm current availability.">
-প্রতিটি পণ্যের বর্তমান প্রাপ্যতা জানতে সরাসরি যোগাযোগ করুন।
-</p>
-</div>
+আমাদের সংগ্রহ
+আমাদের পণ্যসমূহ
+বাচ্চা, বড় পাখি/প্রাণী এবং হ্যাচিং ডিমের বর্তমান তালিকা।
+সব বয়স০ দিন১–৭ দিন৮–৩০ দিন১–৩ মাস৩ মাসের বেশিসব স্টকস্টকে আছেস্টক শেষ
+পণ্য লোড হচ্ছে…
 
-<div class="cards">
 
-<article class="card">
-<div class="photo">
-<img src="images/brahma.jpg" alt="Brahma Chicken"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">BRAHMA CHICKEN</span>
-</div>
-<div class="info">
-<h3>Brahma Chicken</h3>
-<p data-bn="বড় আকার ও আকর্ষণীয় পালকের জন্য পরিচিত মুরগির জাত।"
-data-en="A distinctive chicken breed known for its large size and feathering.">
-বড় আকার ও আকর্ষণীয় পালকের জন্য পরিচিত মুরগির জাত।
-</p>
-<a href="https://wa.me/8801338563545?text=Brahma%20Chicken%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
+খামারের মুহূর্ত
+আমাদের ছবির গ্যালারি
+পণ্যের ছবিগুলো এখানে দেখা যাবে।
 
-<article class="card">
-<div class="photo">
-<img src="images/kadaknath.jpg" alt="Kadaknath Chicken"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">KADAKNATH</span>
-</div>
-<div class="info">
-<h3>Kadaknath Chicken</h3>
-<p data-bn="স্বতন্ত্র বৈশিষ্ট্যের একটি ভারতীয় মুরগির জাত।"
-data-en="An Indian chicken breed with distinctive characteristics.">
-স্বতন্ত্র বৈশিষ্ট্যের একটি ভারতীয় মুরগির জাত।
-</p>
-<a href="https://wa.me/8801338563545?text=Kadaknath%20Chicken%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
+ছবি লোড হচ্ছে…
 
-<article class="card">
-<div class="photo">
-<img src="images/polish-cap.jpg" alt="Polish Cap"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">POLISH CAP</span>
-</div>
-<div class="info">
-<h3>Polish Cap</h3>
-<p data-bn="মাথার ঝুঁটির জন্য পরিচিত শৌখিন মুরগি।"
-data-en="An ornamental chicken known for its distinctive crest.">
-মাথার ঝুঁটির জন্য পরিচিত শৌখিন মুরগি।
-</p>
-<a href="https://wa.me/8801338563545?text=Polish%20Cap%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/golden-sebright.jpg" alt="Golden Sebright"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">GOLDEN SEBRIGHT</span>
-</div>
-<div class="info">
-<h3>Golden Sebright</h3>
-<p data-bn="সুন্দর নকশাযুক্ত ছোট আকারের শৌখিন মুরগি।"
-data-en="A small ornamental chicken with attractive laced plumage.">
-সুন্দর নকশাযুক্ত ছোট আকারের শৌখিন মুরগি।
-</p>
-<a href="https://wa.me/8801338563545?text=Golden%20Sebright%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/japanese-quail.jpg" alt="Japanese Quail"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">JAPANESE QUAIL</span>
-</div>
-<div class="info">
-<h3>Japanese Quail</h3>
-<p data-bn="জাপানি কোয়েল পাখি ও সংশ্লিষ্ট পণ্য।"
-data-en="Japanese quail and related farm products.">
-জাপানি কোয়েল পাখি ও সংশ্লিষ্ট পণ্য।
-</p>
-<a href="https://wa.me/8801338563545?text=Japanese%20Quail%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/european-coturnix.jpg" alt="European Coturnix Quail"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">EUROPEAN COTURNIX</span>
-</div>
-<div class="info">
-<h3>European Coturnix Quail</h3>
-<p data-bn="ইউরোপীয় কটর্নিক্স কোয়েল পাখি।"
-data-en="European Coturnix quail.">
-ইউরোপীয় কটর্নিক্স কোয়েল পাখি।
-</p>
-<a href="https://wa.me/8801338563545?text=European%20Coturnix%20Quail%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/red-necked.jpg" alt="Red Necked"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">RED NECKED</span>
-</div>
-<div class="info">
-<h3>Red Necked</h3>
-<p data-bn="বর্তমান প্রাপ্যতা ও বিস্তারিত জানতে যোগাযোগ করুন।"
-data-en="Contact us for details and current availability.">
-বর্তমান প্রাপ্যতা ও বিস্তারিত জানতে যোগাযোগ করুন।
-</p>
-<a href="https://wa.me/8801338563545?text=Red%20Necked%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/rabbits.jpg" alt="Rabbits"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">RABBITS</span>
-</div>
-<div class="info">
-<h3>Rabbits</h3>
-<p data-bn="খরগোশ ও ছোট প্রাণীর সংগ্রহ।"
-data-en="Rabbits and small livestock.">
-খরগোশ ও ছোট প্রাণীর সংগ্রহ।
-</p>
-<a href="https://wa.me/8801338563545?text=Rabbits%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/guinea-pigs.jpg" alt="Guinea Pigs"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">GUINEA PIGS</span>
-</div>
-<div class="info">
-<h3>Guinea Pigs</h3>
-<p data-bn="গিনিপিগ সম্পর্কে জানতে ও প্রাপ্যতা যাচাই করতে যোগাযোগ করুন।"
-data-en="Contact us for Guinea Pig details and availability.">
-গিনিপিগ সম্পর্কে জানতে ও প্রাপ্যতা যাচাই করতে যোগাযোগ করুন।
-</p>
-<a href="https://wa.me/8801338563545?text=Guinea%20Pigs%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-<article class="card">
-<div class="photo">
-<img src="images/hatching-eggs.jpg" alt="Hatching Eggs"
-onload="this.nextElementSibling.style.display='none'"
-onerror="this.remove()">
-<span class="placeholder">HATCHING EGGS</span>
-</div>
-<div class="info">
-<h3>Hatching Eggs</h3>
-<p data-bn="হ্যাচিং ডিমের ধরন ও বর্তমান প্রাপ্যতা জানতে যোগাযোগ করুন।"
-data-en="Contact us for hatching egg types and current availability.">
-হ্যাচিং ডিমের ধরন ও বর্তমান প্রাপ্যতা জানতে যোগাযোগ করুন।
-</p>
-<a href="https://wa.me/8801338563545?text=Hatching%20Eggs%20availability" target="_blank" rel="noopener" data-bn="খোঁজ নিন →" data-en="Enquire →">খোঁজ নিন →</a>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- PHOTO GALLERY -->
-<section class="gallery" id="gallery">
-<div class="wrap">
-
-<div class="heading">
-<div class="eyebrow" data-bn="খামারের মুহূর্ত" data-en="FARM MOMENTS">খামারের মুহূর্ত</div>
-<h2 data-bn="আমাদের ছবির গ্যালারি" data-en="Our Photo Gallery">আমাদের ছবির গ্যালারি</h2>
-<p data-bn="এখানে তোমার নিজের তোলা খামারের ছবি যোগ করা হবে।"
-data-en="Your own farm photographs will be displayed here.">
-এখানে তোমার নিজের তোলা খামারের ছবি যোগ করা হবে।
-</p>
-</div>
-
-<div class="gallery-grid">
-<div class="tile">
-<img src="images/gallery-1.jpg" alt="Farm photo 1" onerror="this.remove()">
-<span>Farm Photo 01</span>
-</div>
-<div class="tile">
-<img src="images/gallery-2.jpg" alt="Farm photo 2" onerror="this.remove()">
-<span>Farm Photo 02</span>
-</div>
-<div class="tile">
-<img src="images/gallery-3.jpg" alt="Farm photo 3" onerror="this.remove()">
-<span>Farm Photo 03</span>
-</div>
-<div class="tile">
-<img src="images/gallery-4.jpg" alt="Farm photo 4" onerror="this.remove()">
-<span>Farm Photo 04</span>
-</div>
-</div>
-
-<p class="note"
-data-bn="তোমার ছবি GitHub-এর images ফোল্ডারে নির্দিষ্ট নামে আপলোড করলেই এখানে দেখা যাবে।"
-data-en="Upload your photos to the GitHub images folder using the filenames shown in our instructions.">
-তোমার ছবি GitHub-এর images ফোল্ডারে নির্দিষ্ট নামে আপলোড করলেই এখানে দেখা যাবে।
-</p>
-
-</div>
-</section>
-
-<!-- OUR PROMISE -->
-<section class="promise">
-<div class="wrap">
-<div class="eyebrow" data-bn="২০২৬ সাল থেকে" data-en="SINCE 2026">২০২৬ সাল থেকে</div>
-<h2 data-bn="যত্নের সঙ্গে মান, সততার সঙ্গে সেবা"
-data-en="Quality with Care, Service with Honesty">
+SINCE 2026
 যত্নের সঙ্গে মান, সততার সঙ্গে সেবা
-</h2>
-<p data-bn="আমাদের লক্ষ্য দায়িত্বশীল খামার পরিচালনা এবং ক্রেতাদের সঙ্গে স্বচ্ছ ও বিশ্বাসযোগ্য সম্পর্ক গড়ে তোলা।"
-data-en="Our goal is responsible farm keeping and building transparent, trustworthy relationships with customers.">
 আমাদের লক্ষ্য দায়িত্বশীল খামার পরিচালনা এবং ক্রেতাদের সঙ্গে স্বচ্ছ ও বিশ্বাসযোগ্য সম্পর্ক গড়ে তোলা।
-</p>
-</div>
-</section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-<div class="wrap">
 
-<div class="heading">
-<div class="eyebrow" data-bn="যোগাযোগ করুন" data-en="GET IN TOUCH">যোগাযোগ করুন</div>
-<h2 data-bn="TAYBAH CREST FARMS-এর সঙ্গে যোগাযোগ"
-data-en="Contact TAYBAH CREST FARMS">
-TAYBAH CREST FARMS-এর সঙ্গে যোগাযোগ
-</h2>
-<p data-bn="পণ্যের প্রাপ্যতা, অর্ডার ও বিস্তারিত জানতে আমাদের সঙ্গে যোগাযোগ করুন।"
-data-en="Contact us for product availability, orders and further information.">
-পণ্যের প্রাপ্যতা, অর্ডার ও বিস্তারিত জানতে আমাদের সঙ্গে যোগাযোগ করুন।
-</p>
-</div>
+GET IN TOUCH
+যোগাযোগ করুন
 
-<div class="contact-grid">
 
-<div class="contact-card">
-<div class="ico">☎</div>
-<div>
-<h3 data-bn="মোবাইল নম্বর" data-en="Phone">মোবাইল নম্বর</h3>
-<p><a href="tel:+8801352076387">01352076387</a></p>
-</div>
-</div>
+☎
+Phone
+01352076387
 
-<div class="contact-card">
-<div class="ico">✆</div>
-<div>
-<h3>WhatsApp</h3>
-<p
+✆
+WhatsApp
+01338563545
+
+f
+Facebook
+TAYBAH CREST FARMS
+
+⌖
+Location
+Barishal, Bangladesh
+TAYBAH CREST FARMS
+TRUST • CARE • HONESTY
+© TAYBAH CREST FARMS
+WhatsApp⚙ অ্যাডমিন
+
+
+OWNER ACCESS
+অ্যাডমিন প্যানেল
+অনুমোদিত অ্যাডমিন অ্যাকাউন্ট দিয়ে প্রবেশ করুন।
+
+অ্যাডমিন লগইন
+
+ইমেইল
+পাসওয়ার্ড
+লগইন
+
+
+
+পণ্য ব্যবস্থাপনা
+লগআউট
+
+পণ্যের নাম *
+প্রাণীর ধরনChickenQuailRabbitGuinea PigOther
+জাত / Breed
+বিভাগ *সকল বাচ্চাবড় পাখি ও প্রাণীহ্যাচিং ডিম
+বয়স (দিনে), ডিমের জন্য ফাঁকা
+বয়সের লেখা (ঐচ্ছিক)
+দাম (টাকা) *
+স্টকস্টকে আছেস্টক শেষ
+বিবরণ
+ছবি (সর্বোচ্চ ৫ MB)নতুন ছবি না দিলে আগের ছবিটি থাকবে।
+প্রকাশিত?হ্যাঁনা (খসড়া)
+ক্রম
+পণ্য সংরক্ষণনতুন পণ্য / ফর্ম পরিষ্কার
+
+বর্তমান পণ্য
+লোড হচ্ছে…
